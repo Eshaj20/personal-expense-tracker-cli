@@ -6,9 +6,9 @@ This project was developed as part of the Evaao internship assignment. It allows
 
 ---
 
-## 🚀 Features
+## Features
 
-### ✅ Must-Have
+### Must-Have
 - Add expense (amount, date, note, category)
 - View expenses
 - Update expense
@@ -16,7 +16,7 @@ This project was developed as part of the Evaao internship assignment. It allows
 - Save data (SQLite DB: `expenses.db`)
 - Basic validation & error handling
 
-### 🌟 Good-to-Have (Implemented)
+### Good-to-Have (Implemented)
 - Categories (e.g., food, travel, bills)
 - Summary reports (total spent, grouped by category)
 - Filters (by date range or category)
@@ -24,7 +24,7 @@ This project was developed as part of the Evaao internship assignment. It allows
 
 ---
 
-## ⚙️ Setup
+##  Setup
 
 No installation required.  
 Just ensure **Python 3.8+** is installed.
@@ -35,7 +35,7 @@ Just ensure **Python 3.8+** is installed.
 
 ---
 
-## 💻 Usage
+##  Usage
 
 Run the CLI from the directory containing `expense_tracker.py`:
 
@@ -58,7 +58,7 @@ python3 expense_tracker.py delete 1
 python3 expense_tracker.py summary
 python3 expense_tracker.py summary --group-by category
 python3 expense_tracker.py summary --month 2025-10
-🧠 Assumptions & Design
+ Assumptions & Design
 Date input accepted in YYYY-MM-DD or DD-MM-YYYY.
 Internally stored in ISO YYYY-MM-DD format.
 
@@ -70,7 +70,7 @@ Data is stored persistently in a local SQLite database (expenses.db).
 
 The program is dependency-free — runs on any system with Python 3.
 
-📊 Sample Inputs/Outputs
+ Sample Inputs/Outputs
 Example CLI Run
 bash
 Copy code
@@ -86,7 +86,7 @@ Category   | Total Spent
 food       | 250.50
 More examples can be found in sample_run.txt.
 
-📂 Files Included
+Files Included
 File	Description
 expense_tracker.py	Main CLI application
 README.md	Project documentation

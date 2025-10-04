@@ -71,7 +71,7 @@ Data is stored persistently in a local SQLite database (expenses.db).
 The program is dependency-free — runs on any system with Python 3.
 ```
 
-# Sample Inputs/Outputs
+## Sample Inputs/Outputs
 Example CLI Run
 
              $ python3 expense_tracker.py add --amount 250.50 --date 2025-10-01 --category food --note "lunch"
@@ -86,15 +86,15 @@ Category   | Total Spent
 food       | 250.50
 More examples can be found in sample_run.txt.
 
-# Files Included
-File	Description
-expense_tracker.py	 : Main CLI application
-README.md	 : Project documentation
-sample_run.txt	: Sample run demonstrating functionality
-expenses.db :	SQLite DB (created automatically on first run)
+## Files Included
+File	Description :
+- expense_tracker.py	 : Main CLI application
+- README.md	 : Project documentation
+- sample_run.txt	: Sample run demonstrating functionality
+- expenses.db :	SQLite DB (created automatically on first run)
 
 -----------------
-Author
+## Author
 Esha Joshi
 Department of Electronics and Communication Engineering
 Indian Institute of Information Technology, Pune (IIIT Pune)

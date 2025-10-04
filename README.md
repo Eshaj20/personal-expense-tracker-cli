@@ -69,31 +69,32 @@ Amount must be positive.
 Data is stored persistently in a local SQLite database (expenses.db).
 
 The program is dependency-free — runs on any system with Python 3.
+```
 
- Sample Inputs/Outputs
+# Sample Inputs/Outputs
 Example CLI Run
-bash
-Copy code
-$ python3 expense_tracker.py add --amount 250.50 --date 2025-10-01 --category food --note "lunch"
+
+             $ python3 expense_tracker.py add --amount 250.50 --date 2025-10-01 --category food --note "lunch"
 Expense added successfully (ID: 1)
 
-$ python3 expense_tracker.py view
+             $ python3 expense_tracker.py view
 ID | Date       | Category | Amount | Note
 1  | 2025-10-01 | food     | 250.50 | lunch
 
-$ python3 expense_tracker.py summary --group-by category
+              $ python3 expense_tracker.py summary --group-by category
 Category   | Total Spent
 food       | 250.50
 More examples can be found in sample_run.txt.
 
-Files Included
+# Files Included
 File	Description
-expense_tracker.py	Main CLI application
-README.md	Project documentation
-sample_run.txt	Sample run demonstrating functionality
-expenses.db	SQLite DB (created automatically on first run)
+expense_tracker.py	 : Main CLI application
+README.md	 : Project documentation
+sample_run.txt	: Sample run demonstrating functionality
+expenses.db :	SQLite DB (created automatically on first run)
 
-📧 Author
+-----------------
+Author
 Esha Joshi
 Department of Electronics and Communication Engineering
 Indian Institute of Information Technology, Pune (IIIT Pune)

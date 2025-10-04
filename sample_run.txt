@@ -1,0 +1,40 @@
+$ python3 /mnt/data/expense_tracker_assignment/expense_tracker.py add --amount 250.5 --date 2025-10-01 --category food --note "lunch"
+Added expense id=1, amount=250.5, date=2025-10-01, category=food
+
+$ python3 /mnt/data/expense_tracker_assignment/expense_tracker.py add --amount 1200 --date 2025-10-02 --category travel --note "train ticket"
+Added expense id=2, amount=1200.0, date=2025-10-02, category=travel
+
+$ python3 /mnt/data/expense_tracker_assignment/expense_tracker.py add --amount 550 --date 2025-10-03 --category bills --note "electricity"
+Added expense id=3, amount=550.0, date=2025-10-03, category=bills
+
+$ python3 /mnt/data/expense_tracker_assignment/expense_tracker.py view
+ ID     AMOUNT      CATEGORY        DATE  NOTE
+------------------------------------------------------------
+  3     550.00  bills         2025-10-03  electricity
+  2    1200.00  travel        2025-10-02  train ticket
+  1     250.50  food          2025-10-01  lunch
+
+$ python3 /mnt/data/expense_tracker_assignment/expense_tracker.py update 2 --amount 1300 --note "train ticket - updated price"
+Updated expense id=2
+
+$ python3 /mnt/data/expense_tracker_assignment/expense_tracker.py view --category travel
+ ID     AMOUNT      CATEGORY        DATE  NOTE
+------------------------------------------------------------
+  2    1300.00  travel        2025-10-02  train ticket - updated price
+
+$ python3 /mnt/data/expense_tracker_assignment/expense_tracker.py summary --group-by category
+Total spent: 2100.50
+\nBy category:
+  travel       : 1300.00
+  bills        : 550.00
+  food         : 250.50
+
+$ python3 /mnt/data/expense_tracker_assignment/expense_tracker.py delete 1
+Deleted expense id=1
+
+$ python3 /mnt/data/expense_tracker_assignment/expense_tracker.py view
+ ID     AMOUNT      CATEGORY        DATE  NOTE
+------------------------------------------------------------
+  3     550.00  bills         2025-10-03  electricity
+  2    1300.00  travel        2025-10-02  train ticket - updated price
+

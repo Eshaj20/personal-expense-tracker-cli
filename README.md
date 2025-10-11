@@ -93,8 +93,4 @@ File	Description :
 - sample_run.txt	: Sample run demonstrating functionality
 - expenses.db :	SQLite DB (created automatically on first run)
 
------------------
-## Author
-Esha Joshi
-Department of Electronics and Communication Engineering
-Indian Institute of Information Technology, Pune (IIIT Pune)
+
